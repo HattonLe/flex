@@ -35,10 +35,10 @@
 
 
 #include "flexdef.h"
+#include "config.h"
 #include "version.h"
 #include "options.h"
 #include "tables.h"
-#include "parse.h"
 
 static char flex_version[] = FLEX_VERSION;
 
@@ -281,8 +281,9 @@ int main (int argc, char *argv[])
 {
 #if defined(ENABLE_NLS) && ENABLE_NLS
 #if HAVE_LOCALE_H
+#include "locale.h"
 	setlocale (LC_MESSAGES, "");
-        setlocale (LC_CTYPE, "");
+    setlocale (LC_CTYPE, "");
 	textdomain (PACKAGE);
 	bindtextdomain (PACKAGE, LOCALEDIR);
 #endif

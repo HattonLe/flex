@@ -40,8 +40,11 @@ void lerr (const char *msg, ...);
 #include "flexTemplateB.h"
 #include "flexTemplateD.h"
 
-// Name of the flex generated C++ header file.
-#define FlexClassFile "FlexLexer.h"
+#include "flexTemplateI.h"
+
+// Name of the flex generated C++ .cpp & .h file
+#define FlexLexerFileCpp "FlexLexer.cpp"
+#define FlexLexerFileH "FlexLexer.h"
 
 static bool DoneBaseClass = false;
 
@@ -65,18 +68,30 @@ void CreateClassHeader(char *ClassName)
    	if (!DoneBaseClass)
 	{
 		// Ensure we always have the base class header file.
-		File = fopen(FlexClassFile, "w");
+		File = fopen(FlexLexerFileH, "w");
    		if (NULL == File)
 		{
-   			lerr("CreateClassHeader() Error truncating '%s'.\n", FlexClassFile);
+   			lerr("CreateClassHeader() Error truncating '%s'.\n", FlexLexerFileH);
 		}
 		else
 		{
-			// No base class, so
-
 			// Create the Flex base class header (the upper part of the old /usr/lib/FlexLexer.h)
 			// Nothing to change in the template, so just write it out verbatim.
 			fwrite(FlexLexerB_txt, 1, FlexLexerB_txt_len, File);
+			fclose(File);
+			File = NULL;
+		}
+		// Ensure we always have the base class implementation file.
+		File = fopen(FlexLexerFileCpp, "w");
+   		if (NULL == File)
+		{
+   			lerr("CreateClassHeader() Error truncating '%s'.\n", FlexLexerFileCpp);
+		}
+		else
+		{
+			// Create the Flex base class implementation (parts of the old flex generated .cpp files)
+			// Nothing to change in the template, so just write it out verbatim.
+			fwrite(FlexLexerI_txt, 1, FlexLexerI_txt_len, File);
 			fclose(File);
 			File = NULL;
 		}

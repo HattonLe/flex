@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: flex 2.5.38\n"
 "Report-Msgid-Bugs-To: flex-devel@lists.sourceforge.net\n"
-"POT-Creation-Date: 2022-09-27 14:18-0400\n"
+"POT-Creation-Date: 2026-06-28 15:09+0100\n"
 "PO-Revision-Date: 2019-05-23 10:15+0100\n"
 "Last-Translator: Pedro Albuquerque <palbuquerque73@gmail.com>\n"
 "Language-Team: Portuguese <translation-team-pt@lists.sourceforge.net>\n"
@@ -19,34 +19,34 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\\n\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 
-#: src/buf.c:61
+#: src/buf.c:63
 msgid "Allocation of buffer to print string failed"
 msgstr "Falha ao alocar buffer para imprimir a cadeia"
 
-#: src/ccl.c:80
+#: src/ccl.c:82
 msgid "internal error: trying to add a char to a non-last ccl.\n"
 msgstr ""
 
-#: src/dfa.c:59
+#: src/dfa.c:62
 #, c-format
 msgid "State #%d is non-accepting -\n"
 msgstr "Estado nº %d não está a aceitar -\n"
 
-#: src/dfa.c:119
+#: src/dfa.c:122
 msgid "dangerous trailing context"
 msgstr "conteúdo final perigoso"
 
-#: src/dfa.c:159
+#: src/dfa.c:162
 #, c-format
 msgid " associated rule line numbers:"
 msgstr " números de linha de regra associada:"
 
-#: src/dfa.c:193
+#: src/dfa.c:196
 #, c-format
 msgid " out-transitions: "
 msgstr " out-transitions: "
 
-#: src/dfa.c:201
+#: src/dfa.c:204
 #, c-format
 msgid ""
 "\n"
@@ -55,11 +55,11 @@ msgstr ""
 "\n"
 " jam-transitions: EOF "
 
-#: src/dfa.c:331
+#: src/dfa.c:334
 msgid "consistency check failed in epsclosure()"
 msgstr "falha no teste de consistência em epsclosure()"
 
-#: src/dfa.c:422
+#: src/dfa.c:426
 msgid ""
 "\n"
 "\n"
@@ -71,24 +71,24 @@ msgstr ""
 "DFA Dump:\n"
 "\n"
 
-#: src/dfa.c:558
+#: src/dfa.c:563
 msgid "could not create unique end-of-buffer state"
 msgstr "impossível criar estado end-of-buffer exclusivo"
 
-#: src/dfa.c:579
+#: src/dfa.c:584
 #, c-format
 msgid "state # %d:\n"
 msgstr "estado nº %d\n"
 
-#: src/dfa.c:738
+#: src/dfa.c:744
 msgid "Could not write yynxt_tbl[][]"
 msgstr "Impossível escrever yynxt_tbl[][]"
 
-#: src/dfa.c:1001
+#: src/dfa.c:1007
 msgid "bad transition character detected in sympartition()"
 msgstr "detectado um mau carácter de transição em sympartition()"
 
-#: src/gen.c:379
+#: src/gen.c:386
 msgid ""
 "\n"
 "\n"
@@ -100,29 +100,29 @@ msgstr ""
 "Classes de equivalência:\n"
 "\n"
 
-#: src/gen.c:425 src/gen.c:454 src/gen.c:638
+#: src/gen.c:432 src/gen.c:461 src/gen.c:645
 #, c-format
 msgid "state # %d accepts: [%d]\n"
 msgstr "estado nº %d aceita: [%d]\n"
 
-#: src/gen.c:533
+#: src/gen.c:540
 #, c-format
 msgid "state # %d accepts: "
 msgstr "estado nº %d aceita: "
 
-#: src/gen.c:582
+#: src/gen.c:589
 msgid "Could not write yyacclist_tbl"
 msgstr "Impossível escrever yyacclist_tbl"
 
-#: src/gen.c:659
+#: src/gen.c:666
 msgid "Could not write yyacc_tbl"
 msgstr "Impossível escrever yyacc_tbl"
 
-#: src/gen.c:674 src/gen.c:947 src/gen.c:974
+#: src/gen.c:681 src/gen.c:954 src/gen.c:981
 msgid "Could not write ecstbl"
 msgstr "Impossível escrever ecstbl"
 
-#: src/gen.c:694
+#: src/gen.c:701
 msgid ""
 "\n"
 "\n"
@@ -132,344 +132,344 @@ msgstr ""
 "\n"
 "Classes de meta-equivalência:\n"
 
-#: src/gen.c:714
+#: src/gen.c:721
 msgid "Could not write yymeta_tbl"
 msgstr "Impossível escrever yymeta_tbl"
 
-#: src/gen.c:774
+#: src/gen.c:781
 msgid "Could not write yybase_tbl"
 msgstr "Impossível escrever yybase_tbl"
 
-#: src/gen.c:805
+#: src/gen.c:812
 msgid "Could not write yydef_tbl"
 msgstr "Impossível escrever yydef_tbl"
 
-#: src/gen.c:844
+#: src/gen.c:851
 msgid "Could not write yynxt_tbl"
 msgstr "Impossível escrever yynxt_tbl"
 
-#: src/gen.c:877
+#: src/gen.c:884
 msgid "Could not write yychk_tbl"
 msgstr "Impossível escrever yychk_tbl"
 
-#: src/gen.c:932 src/gen.c:965
+#: src/gen.c:939 src/gen.c:972
 msgid "Could not write ftbl"
 msgstr "Impossível escrever ftbl"
 
-#: src/gen.c:938
+#: src/gen.c:945
 msgid "Could not write ssltbl"
 msgstr "Impossível escrever ssltbl"
 
-#: src/gen.c:1014
+#: src/gen.c:1030
 msgid "Could not write eoltbl"
 msgstr "Impossível escrever eoltbl"
 
-#: src/gen.c:1061
+#: src/gen.c:1077
 msgid "Could not write yynultrans_tbl"
 msgstr "Impossível escrever yynultrans_tbl"
 
-#: src/main.c:169
+#: src/main.c:176
 msgid "rule cannot be matched"
 msgstr "impossível comparar a regra"
 
-#: src/main.c:174
+#: src/main.c:181
 msgid "-s option given but default rule can be matched"
 msgstr "indicada a opção -s, mas a regra predefinida pode ser comparada"
 
-#: src/main.c:317
+#: src/main.c:324
 msgid "Can't use -+ with -l option"
 msgstr "Impossível usar -+ com a opção -l"
 
-#: src/main.c:320
+#: src/main.c:327
 msgid "Can't use -f or -F with -l option"
 msgstr "Impossível usar -f ou -F com a opção -l"
 
-#: src/main.c:324
+#: src/main.c:331
 #, fuzzy
 msgid "Can't use --ctrl.reentrant or --bison-bridge with -l option"
 msgstr "Impossível usar --reentrant ou --bison-bridge com a opção -l"
 
-#: src/main.c:356
+#: src/main.c:363
 msgid "-Cf/-CF and -Cm don't make sense together"
 msgstr "-Cf/-CF e -Cm não fazem sentido em conjunto"
 
-#: src/main.c:359
+#: src/main.c:366
 msgid "-Cf/-CF and -I are incompatible"
 msgstr "-Cf/-CF e -I são incompatíveis"
 
-#: src/main.c:363
+#: src/main.c:370
 msgid "-Cf/-CF are incompatible with lex-compatibility mode"
 msgstr "-Cf/-CF são incompatíveis com o modo lex-compatibility"
 
-#: src/main.c:368
+#: src/main.c:375
 msgid "-Cf and -CF are mutually exclusive"
 msgstr "-Cf e -CF são mutuamente exclusivas"
 
-#: src/main.c:372
+#: src/main.c:379
 msgid "Can't use -+ with -CF option"
 msgstr "Impossível usar -+ com a opção -CF"
 
-#: src/main.c:375
+#: src/main.c:382
 #, c-format
 msgid "%array incompatible with -+ option"
 msgstr "%array incompatível com a opção -+"
 
-#: src/main.c:380
+#: src/main.c:387
 msgid "Options -+ and --reentrant are mutually exclusive."
 msgstr "As opções -+ e --reentrant são mutuamente exclusivas."
 
-#: src/main.c:383
+#: src/main.c:390
 msgid "bison bridge not supported for the C++ scanner."
 msgstr "bison bridge não suportada no analisador C++."
 
-#: src/main.c:422 src/main.c:1235
+#: src/main.c:429 src/main.c:1250
 #, c-format
 msgid "could not create %s"
 msgstr "impossível criar %s"
 
-#: src/main.c:443
+#: src/main.c:450
 #, c-format
 msgid "%option yyclass only meaningful for C++ scanners"
 msgstr "a %opção yyclass só tem significado para analisadores C++"
 
-#: src/main.c:447
+#: src/main.c:454
 #, c-format
 msgid "input error reading skeleton file %s"
 msgstr "erro de entrada ao ler ficheiro esqueleto %s"
 
-#: src/main.c:451
+#: src/main.c:458
 #, c-format
 msgid "error closing skeleton file %s"
 msgstr "erro ao fechar ficheiro esqueleto %s"
 
-#: src/main.c:457
+#: src/main.c:464
 #, c-format
 msgid "error writing output file %s"
 msgstr "erro ao escrever ficheiro de saída %s"
 
-#: src/main.c:461
+#: src/main.c:468
 #, c-format
 msgid "error closing output file %s"
 msgstr "erro ao fechar ficheiro de saída %s"
 
-#: src/main.c:465
+#: src/main.c:472
 #, c-format
 msgid "error deleting output file %s"
 msgstr "erro ao eliminar ficheiro de saída %s"
 
-#: src/main.c:472
+#: src/main.c:479
 #, c-format
 msgid "No backing up.\n"
 msgstr "Sem seguranças.\n"
 
-#: src/main.c:476
+#: src/main.c:483
 #, c-format
 msgid "%d backing up (non-accepting) states.\n"
 msgstr "%d estados de segurança (não aceitando).\n"
 
-#: src/main.c:480
+#: src/main.c:487
 #, c-format
 msgid "Compressed tables always back up.\n"
 msgstr "Tabelas comprimidas têm sempre segurança.\n"
 
-#: src/main.c:483
+#: src/main.c:490
 #, c-format
 msgid "error writing backup file %s"
 msgstr "erro ao escrever segurança %s"
 
-#: src/main.c:487
+#: src/main.c:494
 #, c-format
 msgid "error closing backup file %s"
 msgstr "erro ao fechar segurança %s"
 
-#: src/main.c:492
+#: src/main.c:499
 #, c-format
 msgid "%s version %s usage statistics:\n"
 msgstr "%s versão %s estatisticas de uso:\n"
 
-#: src/main.c:495
+#: src/main.c:502
 #, c-format
 msgid "  scanner options: -"
 msgstr "  opções do analisador: -"
 
-#: src/main.c:574
+#: src/main.c:581
 #, c-format
 msgid "  %d/%d NFA states\n"
 msgstr "  estados NFA %d/%d\n"
 
-#: src/main.c:576
+#: src/main.c:583
 #, c-format
 msgid "  %d/%d DFA states (%d words)\n"
 msgstr "  estados DFA %d/%d (%d palavras)\n"
 
-#: src/main.c:578
+#: src/main.c:585
 #, c-format
 msgid "  %d rules\n"
 msgstr "  %d regras\n"
 
-#: src/main.c:583
+#: src/main.c:590
 #, c-format
 msgid "  No backing up\n"
 msgstr "  Sem seguranças\n"
 
-#: src/main.c:587
+#: src/main.c:594
 #, c-format
 msgid "  %d backing-up (non-accepting) states\n"
 msgstr "  %d estados de segurança (não aceitando).\n"
 
-#: src/main.c:592
+#: src/main.c:599
 #, c-format
 msgid "  Compressed tables always back-up\n"
 msgstr "Tabelas comprimidas têm sempre segurança.\n"
 
-#: src/main.c:596
+#: src/main.c:603
 #, c-format
 msgid "  Beginning-of-line patterns used\n"
 msgstr "  Padrões de início de linha usados\n"
 
-#: src/main.c:598
+#: src/main.c:605
 #, c-format
 msgid "  %d/%d start conditions\n"
 msgstr "  condições iniciais %d/%d\n"
 
-#: src/main.c:602
+#: src/main.c:609
 #, c-format
 msgid "  %d epsilon states, %d double epsilon states\n"
 msgstr "  estados epsilon %d, estados duplo epsilon %d\n"
 
-#: src/main.c:606
+#: src/main.c:613
 #, c-format
 msgid "  no character classes\n"
 msgstr "  sem classes de carácter\n"
 
-#: src/main.c:610
+#: src/main.c:617
 #, c-format
 msgid "  %d/%d character classes needed %d/%d words of storage, %d reused\n"
 msgstr ""
 "  classes de carácter %d/%d necessárias %d/%d palavras de armazenamento, %d "
 "reutilizadas\n"
 
-#: src/main.c:615
+#: src/main.c:622
 #, c-format
 msgid "  %d state/nextstate pairs created\n"
 msgstr "  %d pares estado/estado seguinte criados\n"
 
-#: src/main.c:618
+#: src/main.c:625
 #, c-format
 msgid "  %d/%d unique/duplicate transitions\n"
 msgstr "  %d/%d transições únicas/duplicadas\n"
 
-#: src/main.c:623
+#: src/main.c:630
 #, c-format
 msgid "  %d table entries\n"
 msgstr "  %d entradas de tabela\n"
 
-#: src/main.c:631
+#: src/main.c:638
 #, c-format
 msgid "  %d/%d base-def entries created\n"
 msgstr "  %d/%d entradas base-def criadas\n"
 
-#: src/main.c:635
+#: src/main.c:642
 #, c-format
 msgid "  %d/%d (peak %d) nxt-chk entries created\n"
 msgstr "  %d/%d (pico %d) entradas nxt-chk criadas\n"
 
-#: src/main.c:639
+#: src/main.c:646
 #, c-format
 msgid "  %d/%d (peak %d) template nxt-chk entries created\n"
 msgstr "  %d/%d (pico %d) entradas modelo nxt-chk criadas\n"
 
-#: src/main.c:643
+#: src/main.c:650
 #, c-format
 msgid "  %d empty table entries\n"
 msgstr "  %d entradas de tabela vazias\n"
 
-#: src/main.c:645
+#: src/main.c:652
 #, c-format
 msgid "  %d protos created\n"
 msgstr "  %d protos criados\n"
 
-#: src/main.c:648
+#: src/main.c:655
 #, c-format
 msgid "  %d templates created, %d uses\n"
 msgstr "  %d modelos criados, %d usos\n"
 
-#: src/main.c:656
+#: src/main.c:663
 #, c-format
 msgid "  %d/%d equivalence classes created\n"
 msgstr "  %d/%d classes de equivalência criadas\n"
 
-#: src/main.c:664
+#: src/main.c:671
 #, c-format
 msgid "  %d/%d meta-equivalence classes created\n"
 msgstr "  %d/%d classes de meta-equivalência criadas\n"
 
-#: src/main.c:670
+#: src/main.c:677
 #, c-format
 msgid "  %d (%d saved) hash collisions, %d DFAs equal\n"
 msgstr "  %d (%d gravadas) colisões de hash, %d DFAs iguais\n"
 
-#: src/main.c:672
+#: src/main.c:679
 #, c-format
 msgid "  %d sets of reallocations needed\n"
 msgstr "  %d conjuntos de re-alocação necessários\n"
 
-#: src/main.c:674
+#: src/main.c:681
 #, c-format
 msgid "  %d total table entries needed\n"
 msgstr "  %d entradas de tabela totais necessárias\n"
 
-#: src/main.c:735
+#: src/main.c:742
 #, c-format
 msgid "Internal error. flexopts are malformed.\n"
 msgstr "Erro interno. flexopts mal formados.\n"
 
-#: src/main.c:745
+#: src/main.c:752
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "Tente \"%s --help\" para mais informação.\n"
 
-#: src/main.c:807
+#: src/main.c:814
 #, c-format
 msgid "unknown -C option '%c'"
 msgstr "Opção -C \"%c\" desconhecida"
 
-#: src/main.c:1195
+#: src/main.c:1203
 msgid "fatal parse error"
 msgstr "erro de processamento fatal"
 
-#: src/main.c:1247
+#: src/main.c:1262
 msgid "could not write tables header"
 msgstr "impossível criar cabeçalho de tabelas"
 
-#: src/main.c:1251
+#: src/main.c:1266
 #, c-format
 msgid "can't open skeleton file %s"
 msgstr "impossível abrir ficheiro esqueleto %s"
 
-#: src/main.c:1254
+#: src/main.c:1269
 msgid "Prefix cannot include '[' or ']'"
 msgstr ""
 
-#: src/main.c:1322
+#: src/main.c:1337
 #, c-format
 msgid "could not create backing-up info file %s"
 msgstr "impossível criar ficheiro de informação de segurança %s"
 
-#: src/main.c:1343
+#: src/main.c:1358
 #, c-format
 msgid "-l AT&T lex compatibility option entails a large performance penalty\n"
 msgstr ""
 "a opção de compatibilidade -l AT&T lex implica uma grande perda de "
 "desempenho\n"
 
-#: src/main.c:1346
+#: src/main.c:1361
 #, c-format
 msgid " and may be the actual source of other reported performance penalties\n"
 msgstr ""
 " e pode ser a fonte actual de outras penalizações de desempenho reportadas\n"
 
-#: src/main.c:1352
+#: src/main.c:1367
 #, c-format
 msgid ""
 "%%option yylineno entails a performance penalty ONLY on rules that can match "
@@ -478,50 +478,50 @@ msgstr ""
 "a %%opção yylineno implica uma perda de desempenho SÓ em regras que possam "
 "comparar caracteres de nova linha\n"
 
-#: src/main.c:1359
+#: src/main.c:1374
 #, c-format
 msgid "-I (interactive) entails a minor performance penalty\n"
 msgstr "-I (interactiva) implica uma perda menor de desempenho\n"
 
-#: src/main.c:1364
+#: src/main.c:1379
 #, c-format
 msgid "yymore() entails a minor performance penalty\n"
 msgstr "yymore() implica uma perda menor de desempenho\n"
 
-#: src/main.c:1370
+#: src/main.c:1385
 #, c-format
 msgid "REJECT entails a large performance penalty\n"
 msgstr "REJECT implica uma grave perda de desempenho\n"
 
-#: src/main.c:1375
+#: src/main.c:1390
 #, c-format
 msgid "Variable trailing context rules entail a large performance penalty\n"
 msgstr ""
 "Regras variáveis de contexto final implicam uma grave perda de desempenho\n"
 
-#: src/main.c:1387
+#: src/main.c:1402
 msgid "REJECT cannot be used with -f or -F"
 msgstr "REJECT não ode ser usado com -f ou -F"
 
-#: src/main.c:1390
+#: src/main.c:1405
 #, c-format
 msgid "%option yylineno cannot be used with REJECT"
 msgstr "a %opção yylineno não pode ser usada com REJECT"
 
-#: src/main.c:1393
+#: src/main.c:1408
 msgid "variable trailing context rules cannot be used with -f or -F"
 msgstr "regras variáveis de contexto final não podem ser usadas com -f ou -F"
 
-#: src/main.c:1428
+#: src/main.c:1443
 msgid "allocation of macro definition failed"
 msgstr "falha ao alocar definição de macro"
 
-#: src/main.c:1745
+#: src/main.c:1761
 #, c-format
 msgid "Usage: %s [OPTIONS] [FILE]...\n"
 msgstr "Uso: %s [OPÇÕES] [FICHEIRO]...\n"
 
-#: src/main.c:1748
+#: src/main.c:1764
 #, fuzzy, c-format
 msgid ""
 "Generates programs that perform pattern-matching on text.\n"
@@ -653,39 +653,39 @@ msgstr ""
 "  -h, --help              mostra esta mensagem de ajuda\n"
 "  -V, --version           mostra a versão %s\n"
 
-#: src/misc.c:70 src/misc.c:81
-msgid "memory allocation failed in allocate_array()"
-msgstr "falha ao alocar memória em allocate_array()"
-
-#: src/misc.c:131
+#: src/misc.c:116
 #, c-format
 msgid "bad character '%s' detected in check_char()"
 msgstr "mau carácter \"%s\" detectado em check_char()"
 
-#: src/misc.c:136
+#: src/misc.c:121
 #, c-format
 msgid "scanner requires -8 flag to use the character %s"
 msgstr "o analisador requer bandeira -8 para usar o carácter %s"
 
-#: src/misc.c:155
+#: src/misc.c:140
 #, fuzzy
 msgid "memory allocation failure in xstrdup()"
 msgstr "falha ao alocar memória em allocate_array()"
 
-#: src/misc.c:231
+#: src/misc.c:214
 #, c-format
 msgid "%s: fatal internal error, %s\n"
 msgstr "%s: erro interno fatal, %s\n"
 
-#: src/misc.c:587 src/misc.c:598
+#: src/misc.c:570 src/misc.c:586
 msgid "attempt to increase array size failed"
 msgstr "falha ao tentar aumentar o tamanho da matriz"
 
-#: src/misc.c:645
+#: src/misc.c:573 src/misc.c:589
+msgid "memory allocation failed in allocate_array()"
+msgstr "falha ao alocar memória em allocate_array()"
+
+#: src/misc.c:637
 msgid "memory allocation failed in yy_flex_xmalloc()"
 msgstr "falha ao alocar memória em yy_flex_xmalloc()"
 
-#: src/nfa.c:100
+#: src/nfa.c:102
 #, c-format
 msgid ""
 "\n"
@@ -696,236 +696,237 @@ msgstr ""
 "\n"
 "********** a começar o despejo de nfa com estado inicial %d\n"
 
-#: src/nfa.c:111
+#: src/nfa.c:113
 #, c-format
 msgid "state # %4d\t"
 msgstr "estado nº %4d\t"
 
-#: src/nfa.c:126
+#: src/nfa.c:128
 #, c-format
 msgid "********** end of dump\n"
 msgstr "********** fim de despejo\n"
 
-#: src/nfa.c:169
+#: src/nfa.c:171
 msgid "empty machine in dupmachine()"
 msgstr "máquina vazia em dupmachine()"
 
-#: src/nfa.c:234
+#: src/nfa.c:236
 #, c-format
 msgid "Variable trailing context rule at line %d\n"
 msgstr "Regra variável de contexto final na linha %d\n"
 
-#: src/nfa.c:353
+#: src/nfa.c:355
 msgid "bad state type in mark_beginning_as_normal()"
 msgstr "mau tipo de estado em mark_beginning_as_normal()"
 
-#: src/nfa.c:593
+#: src/nfa.c:595
 #, c-format
 msgid "input rules are too complicated (>= %d NFA states)"
 msgstr "regras de entrada muito complicadas (>= %d estados NFA)"
 
-#: src/nfa.c:671
+#: src/nfa.c:673
 msgid "found too many transitions in mkxtion()"
 msgstr "encontradas demasiadas transições em mkxtion()"
 
-#: src/nfa.c:697
+#: src/nfa.c:699
 #, c-format
 msgid "too many rules (> %d)!"
 msgstr "demasiadas regras (> %d)!"
 
-#: src/parse.y:163
+#: src/parse.y:165
 msgid "unknown error processing section 1"
 msgstr "erro desconhecido ao processar a secção 1"
 
-#: src/parse.y:188 src/parse.y:373
+#: src/parse.y:190 src/parse.y:375
 msgid "bad start condition list"
 msgstr "má lista de condição inicial"
 
-#: src/parse.y:208
+#: src/parse.y:210
 msgid "Prefix must not contain [ or ]"
 msgstr ""
 
-#: src/parse.y:337
+#: src/parse.y:339
 msgid "unrecognized rule"
 msgstr "regra não reconhecida"
 
-#: src/parse.y:456 src/parse.y:469 src/parse.y:538
+#: src/parse.y:458 src/parse.y:471 src/parse.y:540
 msgid "trailing context used twice"
 msgstr "contexto final usado duas vezes"
 
-#: src/parse.y:574 src/parse.y:584 src/parse.y:657 src/parse.y:667
+#: src/parse.y:576 src/parse.y:586 src/parse.y:659 src/parse.y:669
 msgid "bad iteration values"
 msgstr "maus valores de iteração"
 
-#: src/parse.y:602 src/parse.y:620 src/parse.y:685 src/parse.y:703
+#: src/parse.y:604 src/parse.y:622 src/parse.y:687 src/parse.y:705
 msgid "iteration value must be positive"
 msgstr "o valor de iteração tem de ser positivo"
 
-#: src/parse.y:826 src/parse.y:836
+#: src/parse.y:828 src/parse.y:838
 #, c-format
 msgid "the character range [%c-%c] is ambiguous in a case-insensitive scanner"
 msgstr ""
 "o intervalo de caracteres [%c-%c] é ambíguo num analisador que ignora "
 "maiúsculas"
 
-#: src/parse.y:841
+#: src/parse.y:843
 msgid "negative range in character class"
 msgstr "intervalo negativo em classe de carácter"
 
-#: src/parse.y:938
+#: src/parse.y:940
 msgid "[:^lower:] is ambiguous in case insensitive scanner"
 msgstr "[:^lower:] é ambíguo num analisador que ignora maiúsculas"
 
-#: src/parse.y:944
+#: src/parse.y:946
 msgid "[:^upper:] ambiguous in case insensitive scanner"
 msgstr "[:^upper:] é ambíguo num analisador que ignora maiúsculas"
 
-#: src/scan.l:73 src/scan.l:662 src/scan.l:720
+#: src/scan.l:73 src/scan.l:663 src/scan.l:716
 msgid "Input line too long\n"
 msgstr "Linha de entrada muito grande\n"
 
-#: src/scan.l:185
+#: src/scan.l:186
 #, c-format
 msgid "malformed '%top' directive"
 msgstr "directiva \"%top\" mal formada"
 
-#: src/scan.l:207
+#: src/scan.l:208
 #, no-c-format
 msgid "unrecognized '%' directive"
 msgstr "directiva \"%\" não reconhecida"
 
-#: src/scan.l:216
+#: src/scan.l:217
 msgid "Definition name too long\n"
 msgstr "Nome de definição muito longo\n"
 
-#: src/scan.l:311
+#: src/scan.l:312
 msgid "Unmatched '{'"
 msgstr "{ sem par"
 
-#: src/scan.l:327
+#: src/scan.l:328
 #, c-format
 msgid "Definition value for {%s} too long\n"
 msgstr "Valor de definição para {%s} muito longo\n"
 
-#: src/scan.l:344
+#: src/scan.l:345
 msgid "incomplete name definition"
 msgstr "Definição de nome incompleta"
 
-#: src/scan.l:486
+#: src/scan.l:487
 msgid "Option line too long\n"
 msgstr "Linha de opção muito longa\n"
 
-#: src/scan.l:494
+#: src/scan.l:495
 #, c-format
 msgid "unrecognized %%option: %s"
 msgstr "%%opção não reconhecida: %s"
 
-#: src/scan.l:677 src/scan.l:850
-msgid "bad character class"
-msgstr "má classe de carácter"
-
-#: src/scan.l:727
+#: src/scan.l:723
 #, c-format
 msgid "undefined definition {%s}"
 msgstr "definição {%s} indefinida"
 
-#: src/scan.l:790
+#: src/scan.l:786
 msgid "unbalanced parenthesis"
 msgstr ""
 
-#: src/scan.l:805
+#: src/scan.l:801
 #, c-format
 msgid "bad <start condition>: %s"
 msgstr "má <condição inicial>: %s"
 
-#: src/scan.l:818
+#: src/scan.l:814
 msgid "missing quote"
 msgstr "aspa em falta"
 
-#: src/scan.l:884
+#: src/scan.l:846
+msgid "bad character class"
+msgstr "má classe de carácter"
+
+#: src/scan.l:880
 #, c-format
 msgid "bad character class expression: %s"
 msgstr "má expressão de classe de carácter: %s"
 
-#: src/scan.l:906
+#: src/scan.l:902
 msgid "bad character inside {}'s"
 msgstr "mau carácter dentro de {}"
 
-#: src/scan.l:912
+#: src/scan.l:908
 msgid "missing }"
 msgstr "} em falta"
 
-#: src/scan.l:1020
+#: src/scan.l:1016
 msgid "EOF encountered inside an action"
 msgstr "EOF encontrado dentro de uma acção"
 
-#: src/scan.l:1025
+#: src/scan.l:1021
 msgid "EOF encountered inside pattern"
 msgstr "EOF encontrado dentro de um padrão"
 
-#: src/scan.l:1058
+#: src/scan.l:1054
 #, c-format
 msgid "bad character: %s"
 msgstr "mau carácter: %s"
 
-#: src/scan.l:1086
-#, c-format
-msgid "can't open %s"
+#: src/scan.l:1082
+#, fuzzy, c-format
+#| msgid "can't open %s"
+msgid "can't open %s: %s"
 msgstr "impossível abrir %s"
 
-#: src/scanopt.c:248
+#: src/scanopt.c:250
 #, c-format
 msgid "Usage: %s [OPTIONS]...\n"
 msgstr "Uso: %s [OPÇÕES]...\n"
 
-#: src/scanopt.c:484
+#: src/scanopt.c:486
 #, c-format
 msgid "option `%s' doesn't allow an argument\n"
 msgstr "a opção \"%s\" não permite um argumento\n"
 
-#: src/scanopt.c:489
+#: src/scanopt.c:491
 #, c-format
 msgid "option `%s' requires an argument\n"
 msgstr "a opção \"%s\" requer um argumento\n"
 
-#: src/scanopt.c:493
+#: src/scanopt.c:495
 #, c-format
 msgid "option `%s' is ambiguous\n"
 msgstr "a opção \"%s\" é ambígua\n"
 
-#: src/scanopt.c:497
+#: src/scanopt.c:499
 #, c-format
 msgid "Unrecognized option `%s'\n"
 msgstr "Opção \"%s\" não reconhecida\n"
 
-#: src/scanopt.c:501
+#: src/scanopt.c:503
 #, c-format
 msgid "Unknown error=(%d)\n"
 msgstr "Erro desconhecido=(%d)\n"
 
-#: src/sym.c:92
+#: src/sym.c:93
 msgid "symbol table memory allocation failed"
 msgstr "falha ao alocar memória de tabela de símbolos"
 
-#: src/sym.c:183
+#: src/sym.c:177
 msgid "name defined twice"
 msgstr "nome definido duas vezes"
 
-#: src/sym.c:231
+#: src/sym.c:220
 #, c-format
 msgid "start condition %s declared twice"
 msgstr "condição inicial %s declarada duas vezes"
 
-#: src/yylex.c:57
+#: src/yylex.c:59
 msgid "premature EOF"
 msgstr "EOF prematuro"
 
-#: src/yylex.c:200
+#: src/yylex.c:202
 #, c-format
 msgid "End Marker\n"
 msgstr "Marcador final\n"
 
-#: src/yylex.c:206
+#: src/yylex.c:208
 #, c-format
 msgid "*Something Weird* - tok: %d val: %d\n"
 msgstr "*Algo esquisito* - tok: %d val: %d\n"

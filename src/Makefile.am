@@ -71,6 +71,8 @@ COMMON_SOURCES = \
 	flexint.h \
 	flexint_shared.h \
 	gen.c \
+	genclass.c \
+	genclass.h \
 	main.c \
 	misc.c \
 	nfa.c \
@@ -110,7 +112,9 @@ MOSTLYCLEANFILES = \
 	$(SKELINCLUDES) \
 	stage1scan.c \
 	stage2scan.c \
-	stage2compare
+	stage2compare \
+	flexTemplateB.h \
+	flexTemplateD.h
 
 CLEANFILES = stage1flex$(EXEEXT)
 
@@ -166,6 +170,13 @@ dist-hook: scan.l flex$(EXEEXT)
 	( cd $(srcdir) && $(abs_builddir)/flex$(EXEEXT) \
 	  -o scan.c -t scan.l ) >scan.c && \
 	mv -f scan.c $(distdir)
+
+# Regenerate embedded copies of the base and derived class templates "FlexLexerB.txt" and "FlexLexerD.txt"
+flexTemplateB.h: FlexLexerB.txt
+	xxd -i FlexLexerB.txt flexTemplateB.h
+
+flexTemplateD.h: FlexLexerD.txt
+	xxd -i FlexLexerD.txt flexTemplateD.h
 
 # make needs to be told to make inclusions so that parallelized runs will
 # not fail.

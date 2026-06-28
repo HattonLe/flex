@@ -35,10 +35,11 @@
 
 
 #include "flexdef.h"
-#include "config.h"
 #include "version.h"
 #include "options.h"
 #include "tables.h"
+#include "parser.h"
+#include "genclass.h"
 
 static char flex_version[] = FLEX_VERSION;
 
@@ -281,9 +282,8 @@ int main (int argc, char *argv[])
 {
 #if defined(ENABLE_NLS) && ENABLE_NLS
 #if HAVE_LOCALE_H
-#include "locale.h"
 	setlocale (LC_MESSAGES, "");
-    setlocale (LC_CTYPE, "");
+        setlocale (LC_CTYPE, "");
 	textdomain (PACKAGE);
 	bindtextdomain (PACKAGE, LOCALEDIR);
 #endif
@@ -1216,6 +1216,13 @@ void readin (void)
 	backend_by_name(ctrl.emit);
 
 	initialize_output_filters();
+
+	// If generating C++ output
+	if (ctrl.C_plus_plus)
+	{
+		// Create a C++ Derived class header file
+		CreateClassHeader(ctrl.yyclass);
+	}
 
 	yyout = stdout;
 

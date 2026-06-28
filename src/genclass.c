@@ -60,7 +60,7 @@ void CreateClassHeader(char *ClassName)
 	sprintf(DerivedFilename, "%s.h", DerivedClassName);
 
 	// why is this not outputting anything ???
-	printf("Hello\n");
+//	printf("Hello\n");
 
    	if (!DoneBaseClass)
 	{

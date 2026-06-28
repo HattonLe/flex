@@ -56,10 +56,10 @@ void CreateClassHeader(char *ClassName)
 	FILE *File;
 
 	// Default to original class naming convention
-	sprintf(DerivedClassName, "%sFlexLexer", (ClassName != NULL) ? ClassName : "yy");
-	sprintf(DerivedFilename, "%s.h", DerivedClassName);
+	sprintf(DerivedClassName, "%s", (ClassName != NULL) ? ClassName : "yyFlexLexer");
+	sprintf(DerivedFilename, "%sFlexLexer.h", DerivedClassName);
 
-	// why is this not outputting anything ???
+	// why is this not outputting anything ??? .. because somethings redirected stdout!
 //	printf("Hello\n");
 
    	if (!DoneBaseClass)

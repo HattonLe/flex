@@ -98,11 +98,11 @@ void CreateClassHeader(char *ClassName)
 		DoneBaseClass = true;
 	}
 
-   	// Open file in append mode
-   	File = fopen(DerivedFilename, "a");
+	// Ensure we always have the derived class header file.
+   	File = fopen(DerivedFilename, "w");
    	if (NULL == File)
 	{
-   		lerr("CreateClassHeader() Error opening '%s' for appending!\n", DerivedFilename);
+   		lerr("CreateClassHeader() Error truncating '%s'.\n", DerivedFilename);
 	}
 	else
 	{

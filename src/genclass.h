@@ -19,6 +19,12 @@
 #ifndef _GENCLASS_H
 #define _GENCLASS_H 1
 
+// Convert placeholders within an entire file.
+// Just in case, its capable of handling files with Linux, Mac or Windows EOL termination.
+// We can use this temporarily to mostly process old style generated cpp files into new form
+// until that original cpp generation code can get updated.
+void SubstPlaceholdersInFile(char *InFilename, char *OutFilename, char *DerivedClassName);
+
 // Creates a derived class definition named "<ClassName>FlexLexer"
 // If ClassName is NULL, <ClassName> defaults to "yy".
 // Output to file, if not existing, creates the Flex header file containing the base class definition.

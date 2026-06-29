@@ -173,7 +173,8 @@ dist-hook: scan.l flex$(EXEEXT)
 	mv -f scan.c $(distdir)
 
 # Regenerate embedded copies of the base and derived class templates "FlexLexerB.txt" and "FlexLexerD.txt" used for header generation
-# and "FlexLexerI.txt" used for base class implementation generation. 
+# and "FlexLexerI.txt" used for base class implementation generation.
+# An possible alternative to "xxd" is "bin2cpp".
 flexTemplateB.h: FlexLexerB.txt
 	xxd -i FlexLexerB.txt flexTemplateB.h
 

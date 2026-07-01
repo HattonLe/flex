@@ -152,6 +152,11 @@ int flex_main (int argc, char *argv[])
 			fflush(stdout);
 			fclose(stdout);
 		}
+
+		// Temporary experiment BODGE
+		bool WasParent = (-1 != waitpid(0, &child_status, WNOHANG));
+		//fprintf(stderr, "Was:%s\n", (WasParent ? "Parent" : "Child"));
+
 		while (wait(&child_status) > 0){
 			if (!WIFEXITED (child_status)
 			    || WEXITSTATUS (child_status) != 0){
@@ -161,6 +166,19 @@ int flex_main (int argc, char *argv[])
 					exit_status = 2;
 
 			}
+		}
+
+		//fprintf(stderr, "Got to:%s\n", "here");
+		if (WasParent)
+		{
+			// TBD BODGE Need to move this somewhere else once I figure out how and where.
+			// At this point of execution it only has access to 99% of the generated CPP file.
+			// (Its missing two bits, one being the appended text that can be optionally defined
+			// at the end of a .l file).
+			// Unfortunately, that appending is done by m4 running via a child processes execv.
+			// This means flex can terminate before m4 completes its job, which in turn means
+			// no hope of reading the finished CPP file from inside flex.
+			RunGenerator(0);
 		}
 		return exit_status - 1;
 	}
@@ -1216,13 +1234,6 @@ void readin (void)
 	backend_by_name(ctrl.emit);
 
 	initialize_output_filters();
-
-	// If generating C++ output
-	if (ctrl.C_plus_plus)
-	{
-		// Create a C++ Derived class header file
-		CreateClassHeader(ctrl.yyclass);
-	}
 
 	yyout = stdout;
 

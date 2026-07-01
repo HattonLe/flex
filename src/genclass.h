@@ -27,8 +27,11 @@ void SubstPlaceholdersInFile(char *InFilename, char *OutFilename, char *DerivedC
 
 // Creates a derived class definition named "<ClassName>FlexLexer"
 // If ClassName is NULL, <ClassName> defaults to "yy".
-// Output to file, if not existing, creates the Flex header file containing the base class definition.
+// Output to file, if not existing, creates new Flex class files and for now auto modifies a copy of the original cpp class file.
 // Class definitions come from the embedded copies (flexTemplate?.h) of the old "/usr/lib/FlexLexer.h" file.
-void CreateClassHeader(char *ClassName);
+void CreateClassFiles(char *ClassName);
+
+// Use this method for testing out where to do this generation with a flushed flex cpp output file ready.
+void RunGenerator(int trace);
 
 #endif /* _GENCLASS_H */
